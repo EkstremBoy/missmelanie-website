@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Miss Mélanie</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo-placeholder.png" alt="Logo de Miss Mélanie" /></a>
+      </div>
+      <nav>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Prise de RDV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding-top: 6rem;" class="page-header">
+      <h1 class="section-title">Nos services</h1>
+      <p style="text-align:center; max-width: 800px; margin: 0 auto;">
+        Découvrez les prestations proposées par Miss Mélanie pour accompagner les élèves dans leur parcours scolaire. Chaque service est conçu pour répondre aux besoins spécifiques de chacun.
+      </p>
+    </section>
+    <section class="services-list">
+      <div class="cards">
+        <div class="card">
+          <h3>Cours particuliers personnalisés</h3>
+          <p>Des séances individuelles pour revoir les notions fondamentales, combler les lacunes et approfondir les connaissances. Des plans d’apprentissage sur mesure sont élaborés pour chaque élève.</p>
+        </div>
+        <div class="card">
+          <h3>Coaching scolaire et méthodologie</h3>
+          <p>Un accompagnement global pour apprendre à s’organiser, à gérer son temps et à adopter des méthodes de travail efficaces. Idéal pour reprendre confiance et gagner en autonomie.</p>
+        </div>
+        <div class="card">
+          <h3>Ateliers de groupe</h3>
+          <p>Des sessions collectives autour de thématiques variées : préparation d’examens, soutien en lecture, ateliers ludiques en mathématiques, etc. Chaque atelier favorise l’entraide et la motivation.</p>
+        </div>
+        <div class="card">
+          <h3>Soutien en ligne</h3>
+          <p>Des cours et séances de coaching à distance via visioconférence, pour garder le lien et continuer les apprentissages même à la maison.</p>
+        </div>
+        <div class="card">
+          <h3>Suivi régulier et bilan</h3>
+          <p>Des points réguliers avec les parents et des bilans détaillés pour suivre la progression de l’élève, ajuster les objectifs et valoriser les réussites.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="year"></span> Miss Mélanie. Tous droits réservés.</p>
+      <p>Saint‑Eustache, Québec</p>
+      <p>Email&nbsp;: <a href="mailto:contact@missmelanie.online">contact@missmelanie.online</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navUl.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

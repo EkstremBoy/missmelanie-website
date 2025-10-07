@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miss Mélanie | Accueil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Import Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo-placeholder.png" alt="Logo de Miss Mélanie" /></a>
+      </div>
+      <nav>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Prise de RDV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Bienvenue chez Miss Mélanie</h1>
+      <p>Accompagnement scolaire personnalisé et coaching pour élèves et parents.</p>
+      <a href="contact.html" class="btn">Prendre rendez‑vous</a>
+    </section>
+
+    <section class="about-preview">
+      <h2 class="section-title">À propos de Mélanie</h2>
+      <p>Passionnée d’enseignement et riche de plusieurs années d’expérience, Mélanie aide ses élèves à développer leur potentiel à travers des méthodes bienveillantes et adaptées à chacun.</p>
+      <p style="text-align:center"><a href="about.html" class="btn">En savoir plus</a></p>
+    </section>
+
+    <section class="services-preview">
+      <h2 class="section-title">Services proposés</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Cours particuliers</h3>
+          <p>Soutien scolaire pour toutes les matières du primaire et secondaire, adapté au rythme de l’élève.</p>
+        </div>
+        <div class="card">
+          <h3>Coaching scolaire</h3>
+          <p>Accompagnement global pour apprendre à apprendre et développer des stratégies efficaces.</p>
+        </div>
+        <div class="card">
+          <h3>Ateliers thématiques</h3>
+          <p>Sessions de groupe pour explorer des sujets spécifiques et favoriser l’entraide et la collaboration.</p>
+        </div>
+      </div>
+      <p style="text-align:center"><a href="services.html" class="btn">Voir tous les services</a></p>
+    </section>
+
+    <section class="blog-preview">
+      <h2 class="section-title">Derniers articles du blog</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Article à venir</h3>
+          <p>Le blog de Mélanie sera bientôt en ligne. Revenez prochainement pour découvrir des astuces et ressources pédagogiques&nbsp;!</p>
+        </div>
+        <div class="card">
+          <h3>Article à venir</h3>
+          <p>Des conseils pour accompagner votre enfant dans sa scolarité et son épanouissement.</p>
+        </div>
+        <div class="card">
+          <h3>Article à venir</h3>
+          <p>Focus sur des méthodes d’apprentissage innovantes et bienveillantes.</p>
+        </div>
+      </div>
+      <p style="text-align:center"><a href="blog.html" class="btn">Consulter le blog</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="year"></span> Miss Mélanie. Tous droits réservés.</p>
+      <p>Saint‑Eustache, Québec</p>
+      <p>Email&nbsp;: <a href="mailto:contact@missmelanie.online">contact@missmelanie.online</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Mettre à jour l'année automatiquement
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Menu responsive
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navUl.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

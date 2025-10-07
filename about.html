@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos | Miss Mélanie</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .about-content .card ul {
+      padding-left: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo-placeholder.png" alt="Logo de Miss Mélanie" /></a>
+      </div>
+      <nav>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Prise de RDV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding-top: 6rem;" class="page-header">
+      <h1 class="section-title">À propos de Miss Mélanie</h1>
+    </section>
+    <section class="about-content">
+      <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: start;">
+        <div class="card">
+          <img src="images/profile-placeholder.png" alt="Portrait de Mélanie" style="width: 100%; border-radius: 8px;" />
+        </div>
+        <div class="card">
+          <h3>Qui suis‑je&nbsp;?</h3>
+          <p>Mélanie est enseignante passionnée et coach pédagogique depuis plus de dix ans. Elle a accompagné de nombreux élèves de tous âges à retrouver confiance en eux et à atteindre leurs objectifs scolaires.</p>
+          <h3>Mon approche</h3>
+          <p>Chaque élève est unique. C’est pourquoi Mélanie adapte ses méthodes en fonction des besoins et du rythme de chacun. Elle privilégie une pédagogie bienveillante et motivante, où l’erreur est perçue comme une opportunité d’apprentissage.</p>
+          <h3>Mes valeurs</h3>
+          <ul>
+            <li>Bienveillance et écoute</li>
+            <li>Patience et persévérance</li>
+            <li>Curiosité et créativité</li>
+            <li>Respect du rythme de chacun</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="year"></span> Miss Mélanie. Tous droits réservés.</p>
+      <p>Saint‑Eustache, Québec</p>
+      <p>Email&nbsp;: <a href="mailto:contact@missmelanie.online">contact@missmelanie.online</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navUl.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
