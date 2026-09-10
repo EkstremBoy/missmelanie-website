@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c4e2f5">
+  <meta name="description" content="Entrez dans l’univers de Miss Melanie.">
+  <title>Miss Melanie</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="magic.js" defer></script>
+</head>
+<body>
+  <main>
+    <canvas id="universe" aria-hidden="true"></canvas>
+    <p id="firework-hint" aria-live="polite">Saurez-vous trouver le feu d’artifice&nbsp;?</p>
+    <h1>Miss Melanie</h1>
+    <p id="tagline" aria-live="polite">Le plaisir d’apprendre</p>
+    <nav aria-label="Langue / Language"><button data-lang="en" lang="en" aria-pressed="false">EN</button><span>/</span><button data-lang="fr" lang="fr" aria-pressed="true">FR</button></nav>
+    <div class="entry"><button id="start"><span id="start-label">Commencez ici</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.3"/></svg></button></div>
+    <dialog id="welcome"><button id="close" aria-label="Fermer">×</button><p class="dialog-name">Miss Melanie</p><p id="preview-note">La suite de votre univers arrive bientôt.</p></dialog>
+  </main>
+</body>
+</html>
