@@ -92,6 +92,25 @@
 }
 .nav-logo .logo-mark { font-size: 24px; }
 .nav-logo .logo-name span { color: var(--violet); }
+.admin-tag {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--text-mint);
+  background: var(--bg-mint-soft);
+  border: 1px solid var(--border-mint);
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+  margin-left: 4px;
+}
+.service-card.disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.service-card.disabled:hover {
+  border-color: var(--border-default);
+  box-shadow: none;
+  transform: none;
+}
 
 .nav-links {
   display: none;

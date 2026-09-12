@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Miss Melanie</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css?v=1">
+  <link rel="stylesheet" href="../css/components.css?v=1">
+  <link rel="stylesheet" href="../css/responsive.css?v=1">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="../home.html" class="nav-logo">
+        <span class="logo-mark">🌸</span>
+        <span class="logo-name">Miss <span>Melanie</span></span>
+        <span class="admin-tag">🔒 Admin</span>
+      </a>
+      <div class="nav-actions">
+        <a href="../home.html" class="btn-secondary" data-fr="← Retour au site" data-en="← Back to site">← Retour au site</a>
+        <button id="lang-toggle" class="lang-toggle" onclick="toggleLang()" aria-label="Changer de langue">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section" style="padding-top:48px;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-fr="ESPACE PRIVÉ" data-en="PRIVATE AREA">ESPACE PRIVÉ</div>
+        <h1 class="section-title" data-fr="Tableau de <span>bord</span>" data-en="Admin <span>dashboard</span>">Tableau de <span>bord</span></h1>
+        <p class="section-subtitle" data-fr="Protégé par authentification — cette section n'est pas accessible publiquement." data-en="Protected by authentication — this section is not publicly accessible.">Protégé par authentification — cette section n'est pas accessible publiquement.</p>
+      </div>
+
+      <div class="card-grid features-grid">
+        <a class="service-card" href="site-info.html">
+          <h3>📄 <span data-fr="Infos du site" data-en="Site info">Infos du site</span></h3>
+          <p class="service-description" data-fr="Hébergement, domaine, comptes utilisés — sans les mots de passe." data-en="Hosting, domain, accounts used — without passwords.">Hébergement, domaine, comptes utilisés — sans les mots de passe.</p>
+        </a>
+        <a class="service-card" href="tools.html">
+          <h3>🎓 <span data-fr="Outils d'apprentissage" data-en="Learning tools">Outils d'apprentissage</span></h3>
+          <p class="service-description" data-fr="À venir — outils protégés, accès libre pendant les cours avec Melanie." data-en="Coming soon — protected tools, free access during classes with Melanie.">À venir — outils protégés, accès libre pendant les cours avec Melanie.</p>
+        </a>
+        <div class="service-card disabled">
+          <h3>👥 <span data-fr="Clients" data-en="Clients">Clients</span></h3>
+          <p class="service-description" data-fr="À venir." data-en="Coming soon.">À venir.</p>
+        </div>
+        <div class="service-card disabled">
+          <h3>📚 <span data-fr="Cours" data-en="Courses">Cours</span></h3>
+          <p class="service-description" data-fr="À venir." data-en="Coming soon.">À venir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/lang.js?v=1"></script>
+</body>
+</html>
