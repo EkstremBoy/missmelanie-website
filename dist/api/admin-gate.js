@@ -54,24 +54,28 @@ function isAuthorized(req) {
 }
 
 module.exports = (req, res) => {
-  if (!isAuthorized(req)) {
-    res.setHeader('WWW-Authenticate', 'Basic realm="Miss Melanie — Admin", charset="UTF-8"');
+  try {
+    if (!isAuthorized(req)) {
+      res.setHeader('WWW-Authenticate', 'Basic realm="Miss Melanie - Admin", charset="UTF-8"');
+      res.setHeader('Cache-Control', 'no-store');
+      res.status(401).send('Authentification requise / Authentication required');
+      return;
+    }
+
+    let requested = req.query.path;
+    if (Array.isArray(requested)) requested = requested.join('/');
+    if (!requested) requested = 'index.html';
+
+    const html = pages[requested];
+    if (!html) {
+      res.status(404).send('Page introuvable');
+      return;
+    }
+
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.setHeader('Cache-Control', 'no-store');
-    res.status(401).send('Authentification requise / Authentication required');
-    return;
+    res.status(200).send(html);
+  } catch (err) {
+    res.status(500).send('DEBUG ERROR: ' + (err && err.stack ? err.stack : String(err)));
   }
-
-  let requested = req.query.path;
-  if (Array.isArray(requested)) requested = requested.join('/');
-  if (!requested) requested = 'index.html';
-
-  const html = pages[requested];
-  if (!html) {
-    res.status(404).send('Page introuvable');
-    return;
-  }
-
-  res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  res.setHeader('Cache-Control', 'no-store');
-  res.status(200).send(html);
 };
