@@ -1,0 +1,12 @@
+{
+  "name": "missmelanie-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site professionnel bilingue de Miss Melanie — tutrice d'anglais en ligne pour enfants au Québec.",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "stripe": "^16.0.0"
+  }
+}

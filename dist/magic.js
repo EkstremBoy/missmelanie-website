@@ -158,7 +158,6 @@
   window.addEventListener('resize',resize);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden){last=performance.now();draw(last);}else cancelAnimationFrame(frame);});
   reduced.addEventListener('change',()=>draw(performance.now()));
-  const dialog=document.querySelector('#welcome');
   const hint=document.querySelector('#firework-hint');
   let hintTimer;
   let language='fr';
@@ -174,14 +173,16 @@
     document.querySelector('#start-label').textContent=lang==='fr'?'Commencez ici':'Start here';
     hint.textContent=lang==='fr'?'Saurez-vous trouver le feu d’artifice ?':'Can you find the fireworks?';
     document.querySelector('#tagline').textContent=lang==='fr'?'Le plaisir d’apprendre':'The joy of learning';
-    document.querySelector('#preview-note').textContent=lang==='fr'?'La suite de votre univers arrive bientôt.':'The rest of your universe is coming soon.';
-    document.querySelector('#close').setAttribute('aria-label',lang==='fr'?'Fermer':'Close');
+    // Le site principal (home.html) lit la même clé localStorage pour rester dans la langue choisie ici.
+    try{localStorage.setItem('lang',lang);}catch(e){}
     showHint();
   }
   document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
-  document.querySelector('#start').addEventListener('click',()=>{burst=1;dialog.showModal();});
-  document.querySelector('#close').addEventListener('click',()=>dialog.close());
-  dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+  document.querySelector('#start').addEventListener('click',()=>{
+    burst=1;
+    // Laisse l'animation de pulsation jouer avant de passer à la page d'accueil du site.
+    setTimeout(()=>{window.location.href='home.html';},1100);
+  });
   resize();
   showHint();
   setTimeout(revealTagline,9000);

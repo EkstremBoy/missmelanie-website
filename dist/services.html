@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cours & Tarifs — Miss Melanie</title>
+  <meta name="description" content="Découvrez les cours d'anglais offerts par Miss Melanie pour enfants de 5 à 16 ans. Cours d'essai et forfaits 10 cours.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css?v=9">
+  <link rel="stylesheet" href="css/components.css?v=9">
+  <link rel="stylesheet" href="css/responsive.css?v=9">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="home.html" class="nav-logo">
+        <span class="logo-mark">🌸</span>
+        <span class="logo-name">Miss <span>Melanie</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="services.html" class="active" data-fr="Cours" data-en="Classes">Cours</a>
+        <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+        <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#services-grid" class="btn-primary nav-cta" data-fr="Réserver →" data-en="Book →">Réserver →</a>
+        <button id="lang-toggle" class="lang-toggle" onclick="toggleLang()" aria-label="Changer de langue">EN</button>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div class="mobile-menu">
+    <a href="services.html" data-fr="Cours" data-en="Classes">Cours</a>
+    <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+    <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+    <a href="#services-grid" class="btn-primary" data-fr="Réserver un cours →" data-en="Book a class →">Réserver un cours →</a>
+  </div>
+
+  <!-- ===== HEADER PAGE ===== -->
+  <section class="hero" style="padding:48px 0 32px;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:0;">
+        <div class="section-tag" data-fr="NOS COURS" data-en="OUR CLASSES">NOS COURS</div>
+        <h1 class="section-title" data-fr="Cours & <span>tarifs</span>" data-en="Classes & <span>pricing</span>">Cours & <span>tarifs</span></h1>
+        <p class="section-subtitle" data-fr="Un seul objectif : que votre enfant apprenne en s'amusant. Commencez toujours par un cours d'essai — aucun engagement." data-en="One goal: your child learning while having fun. Always start with a trial class — no commitment required.">
+          Un seul objectif : que votre enfant apprenne en s'amusant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMENT ÇA FONCTIONNE ===== -->
+  <section class="section" style="padding:24px 0 8px;">
+    <div class="container">
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="process-step-num">1</span>
+          <div>
+            <h3 data-fr="Réservez un cours d'essai" data-en="Book a trial class">Réservez un cours d'essai</h3>
+            <p data-fr="Choisissez simplement l'âge de votre enfant — pas besoin de connaître son niveau à l'avance." data-en="Just pick your child's age — no need to know their level ahead of time.">Choisissez simplement l'âge de votre enfant — pas besoin de connaître son niveau à l'avance.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="process-step-num">2</span>
+          <div>
+            <h3 data-fr="Melanie évalue son niveau" data-en="Melanie assesses their level">Melanie évalue son niveau</h3>
+            <p data-fr="Débutant, intermédiaire ou avancé — le cours d'essai sert justement à établir ce niveau." data-en="Beginner, intermediate, or advanced — the trial class is exactly what establishes that level.">Débutant, intermédiaire ou avancé — le cours d'essai sert justement à établir ce niveau.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="process-step-num">3</span>
+          <div>
+            <h3 data-fr="Vous en discutez ensemble" data-en="You talk it through together">Vous en discutez ensemble</h3>
+            <p data-fr="Après le cours, Melanie vous contacte pour vous guider vers le bon choix pour votre enfant." data-en="After the class, Melanie reaches out to guide you toward the right fit for your child.">Après le cours, Melanie vous contacte pour vous guider vers le bon choix pour votre enfant.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="process-step-num">4</span>
+          <div>
+            <h3 data-fr="Vous réservez en confiance" data-en="You book with confidence">Vous réservez en confiance</h3>
+            <p data-fr="Le forfait 10 cours démarre une fois que tout le monde est aligné." data-en="The 10-class package starts once everyone's aligned.">Le forfait 10 cours démarre une fois que tout le monde est aligné.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FILTRES + GRILLE ===== -->
+  <section class="section" style="padding-top:16px;">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all" data-fr="Tous" data-en="All">Tous</button>
+        <button class="filter-btn" data-filter="5-9" data-fr="5–9 ans" data-en="Ages 5–9">5–9 ans</button>
+        <button class="filter-btn" data-filter="10-16" data-fr="10–16 ans" data-en="Ages 10–16">10–16 ans</button>
+        <button class="filter-btn" data-filter="online" data-fr="En ligne" data-en="Online">En ligne</button>
+        <button class="filter-btn" data-filter="clubs" data-fr="Clubs" data-en="Clubs">Clubs</button>
+        <a href="#workshops" class="filter-btn" data-fr="Ateliers en garderie ↓" data-en="Daycare Workshops ↓">Ateliers en garderie ↓</a>
+      </div>
+
+      <div class="card-grid services-grid" id="services-grid">
+        <!-- Injecté par js/services.js à partir de js/data.js -->
+      </div>
+
+      <div class="callout">
+        💡 <strong data-fr="Clients existants" data-en="Returning clients">Clients existants</strong> /
+        <span data-fr="Returning clients" data-en="Clients existants">Returning clients</span><br>
+        <span data-fr="Économisez 5$ par forfait en payant par virement Interac." data-en="Save $5 per package with Interac e-Transfer.">Économisez 5$ par forfait en payant par virement Interac.</span>
+        <span data-fr="Aucun engagement requis." data-en="No commitment required.">Aucun engagement requis.</span>
+        → <a href="mailto:admin@missmelanie.online">admin@missmelanie.online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ATELIERS EN GARDERIE ===== -->
+  <section class="section" id="workshops" style="background:var(--bg-mint-soft); scroll-margin-top:80px;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-fr="POUR LES GARDERIES" data-en="FOR DAYCARES">POUR LES GARDERIES</div>
+        <h2 class="section-title" data-fr="Ateliers en <span>garderie</span>" data-en="Daycare <span>Workshops</span>">Ateliers en <span>garderie</span></h2>
+        <p class="section-subtitle" id="workshops-intro"></p>
+      </div>
+
+      <div class="card-grid workshop-grid" id="workshops-grid">
+        <!-- Injecté par js/services.js à partir de js/data.js (DAYCARE_WORKSHOPS) -->
+      </div>
+
+      <div class="callout workshop-flexibility" id="workshops-flexibility">
+        <!-- Injecté par js/services.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><span>🌸</span> Miss Melanie</div>
+          <p class="footer-tagline" data-fr="Cours d'anglais en ligne et en présentiel pour enfants de 5 à 16 ans au Québec." data-en="Online and in-person English classes for children ages 5–16 in Quebec.">Cours d'anglais en ligne et en présentiel pour enfants de 5 à 16 ans au Québec.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-fr="Liens rapides" data-en="Quick Links">Liens rapides</h4>
+          <ul>
+            <li><a href="home.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" data-fr="Cours & tarifs" data-en="Classes & Pricing">Cours & tarifs</a></li>
+            <li><a href="about.html" data-fr="À propos" data-en="About">À propos</a></li>
+            <li><a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+          <ul>
+            <li><a href="mailto:melanie@missmelanie.online">melanie@missmelanie.online</a></li>
+            <li><a href="mailto:admin@missmelanie.online">admin@missmelanie.online</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Miss Melanie · <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
+        <div class="footer-links">
+          <a href="#" data-fr="Politique de confidentialité" data-en="Privacy Policy">Politique de confidentialité</a>
+          <a href="#" data-fr="Modalités" data-en="Terms">Modalités</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lang.js?v=9"></script>
+  <script src="js/data.js?v=9"></script>
+  <script src="js/stripe.js?v=9"></script>
+  <script src="js/services.js?v=9"></script>
+  <script src="js/main.js?v=9"></script>
+</body>
+</html>

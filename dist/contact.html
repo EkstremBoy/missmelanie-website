@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact — Miss Melanie</title>
+  <meta name="description" content="Contactez Miss Melanie pour réserver un cours d'essai ou poser une question.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css?v=9">
+  <link rel="stylesheet" href="css/components.css?v=9">
+  <link rel="stylesheet" href="css/responsive.css?v=9">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="home.html" class="nav-logo">
+        <span class="logo-mark">🌸</span>
+        <span class="logo-name">Miss <span>Melanie</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="services.html" data-fr="Cours" data-en="Classes">Cours</a>
+        <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+        <a href="contact.html" class="active" data-fr="Contact" data-en="Contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="services.html" class="btn-primary nav-cta" data-fr="Réserver →" data-en="Book →">Réserver →</a>
+        <button id="lang-toggle" class="lang-toggle" onclick="toggleLang()" aria-label="Changer de langue">EN</button>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div class="mobile-menu">
+    <a href="services.html" data-fr="Cours" data-en="Classes">Cours</a>
+    <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+    <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+    <a href="services.html" class="btn-primary" data-fr="Réserver un cours →" data-en="Book a class →">Réserver un cours →</a>
+  </div>
+
+  <!-- ===== HEADER PAGE ===== -->
+  <section class="hero" style="padding:48px 0 32px;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:0;">
+        <div class="section-tag" data-fr="CONTACT" data-en="CONTACT">CONTACT</div>
+        <h1 class="section-title" data-fr="Parlons de <span>votre enfant</span>" data-en="Let's talk about <span>your child</span>">Parlons de <span>votre enfant</span></h1>
+        <p class="section-subtitle" data-fr="Une question, un cours d'essai à réserver? Écrivez-nous — Melanie répond personnellement." data-en="A question, or want to book a trial class? Write to us — Melanie replies personally.">
+          Une question, un cours d'essai à réserver? Écrivez-nous.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENU ===== -->
+  <section class="section" style="padding-top:24px;">
+    <div class="container contact-grid">
+
+      <!-- Formulaire Formspree -->
+      <div class="contact-card">
+        <form action="https://formspree.io/f/FORMSPREE_ID_À_CONFIGURER" method="POST">
+          <div class="form-group">
+            <label for="name" data-fr="Nom" data-en="Name">Nom</label>
+            <input class="form-control" type="text" id="name" name="name" required
+                   data-fr="Nom du parent" data-en="Parent's name" data-attr="placeholder" placeholder="Nom du parent">
+          </div>
+          <div class="form-group">
+            <label for="email" data-fr="Courriel" data-en="Email">Courriel</label>
+            <input class="form-control" type="email" id="email" name="email" required
+                   data-fr="votre@courriel.com" data-en="your@email.com" data-attr="placeholder" placeholder="votre@courriel.com">
+          </div>
+          <div class="form-group">
+            <label for="child_age" data-fr="Âge de l'enfant" data-en="Child's age">Âge de l'enfant</label>
+            <input class="form-control" type="text" id="child_age" name="child_age"
+                   data-fr="Ex : 8 ans" data-en="E.g. 8 years old" data-attr="placeholder" placeholder="Ex : 8 ans">
+          </div>
+          <div class="form-group">
+            <label for="service" data-fr="Sujet" data-en="Subject">Sujet</label>
+            <select class="form-control" id="service" name="service">
+              <option data-fr="Cours d'essai" data-en="Trial class">Cours d'essai</option>
+              <option data-fr="Information générale" data-en="General info">Information générale</option>
+              <option data-fr="Problème technique" data-en="Technical issue">Problème technique</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-fr="Votre message" data-en="Your message">Votre message</label>
+            <textarea class="form-control" id="message" name="message"
+                      data-fr="Dites-nous en plus..." data-en="Tell us more..." data-attr="placeholder" placeholder="Dites-nous en plus..."></textarea>
+          </div>
+          <input type="hidden" name="_replyto" value="admin@missmelanie.online">
+          <button type="submit" class="btn-primary btn-block" data-fr="Envoyer" data-en="Send">Envoyer</button>
+        </form>
+
+        <a href="#" onclick="openTechModal(); return false;" class="tech-link">
+          🔧 <span data-fr="Problème technique?" data-en="Technical issue?">Problème technique?</span>
+        </a>
+      </div>
+
+      <!-- Infos de contact -->
+      <div>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <span class="icon">📧</span>
+            <div>
+              <strong data-fr="Clients VIP" data-en="VIP clients">Clients VIP</strong>
+              <a href="mailto:melanie@missmelanie.online">melanie@missmelanie.online</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">📧</span>
+            <div>
+              <strong data-fr="Réservations" data-en="Bookings">Réservations</strong>
+              <a href="mailto:admin@missmelanie.online">admin@missmelanie.online</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">📍</span>
+            <div>
+              <strong data-fr="Lieu" data-en="Location">Lieu</strong>
+              <span data-fr="En ligne via Google Meet" data-en="Online via Google Meet">En ligne via Google Meet</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">🗓️</span>
+            <div>
+              <strong data-fr="Horaires" data-en="Schedule">Horaires</strong>
+              <span data-fr="Mercredi, samedi, mardi, jeudi, dimanche" data-en="Wednesday, Saturday, Tuesday, Thursday, Sunday">Mercredi, samedi, mardi, jeudi, dimanche</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== MODAL SUPPORT TECHNIQUE ===== -->
+  <div class="modal-overlay" id="tech-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeTechModal()" aria-label="Fermer">✕</button>
+      <h3 style="margin-bottom:12px;" data-fr="Problème technique?" data-en="Technical issue?">Problème technique?</h3>
+      <p style="color:var(--text-mid); font-size:14px; margin-bottom:20px;"
+         data-fr="Écrivez-nous directement, notre équipe de support s'en occupe rapidement."
+         data-en="Write to us directly, our support team handles it quickly.">
+        Écrivez-nous directement, notre équipe de support s'en occupe rapidement.
+      </p>
+      <a href="mailto:support@missmelanie.online" class="btn-primary btn-block">support@missmelanie.online</a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><span>🌸</span> Miss Melanie</div>
+          <p class="footer-tagline" data-fr="Cours d'anglais en ligne et en présentiel pour enfants de 5 à 16 ans au Québec." data-en="Online and in-person English classes for children ages 5–16 in Quebec.">Cours d'anglais en ligne et en présentiel pour enfants de 5 à 16 ans au Québec.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-fr="Liens rapides" data-en="Quick Links">Liens rapides</h4>
+          <ul>
+            <li><a href="home.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" data-fr="Cours & tarifs" data-en="Classes & Pricing">Cours & tarifs</a></li>
+            <li><a href="about.html" data-fr="À propos" data-en="About">À propos</a></li>
+            <li><a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+          <ul>
+            <li><a href="mailto:melanie@missmelanie.online">melanie@missmelanie.online</a></li>
+            <li><a href="mailto:admin@missmelanie.online">admin@missmelanie.online</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Miss Melanie · <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
+        <div class="footer-links">
+          <a href="#" data-fr="Politique de confidentialité" data-en="Privacy Policy">Politique de confidentialité</a>
+          <a href="#" data-fr="Modalités" data-en="Terms">Modalités</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lang.js?v=9"></script>
+  <script src="js/main.js?v=9"></script>
+</body>
+</html>

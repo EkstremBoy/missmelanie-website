@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Miss Melanie — Cours d'anglais en ligne pour enfants | Ages 5–16</title>
+  <meta name="description" content="Cours d'anglais en ligne et en présentiel pour enfants de 5 à 16 ans au Québec. Cours d'essai disponibles. Approche personnalisée et bienveillante.">
+
+  <meta property="og:title" content="Miss Melanie — Cours d'anglais pour enfants">
+  <meta property="og:description" content="Des cours d'anglais personnalisés pour vos enfants, en ligne via Google Meet.">
+  <meta property="og:image" content="https://missmelanie.online/assets/og-image.png">
+  <meta property="og:url" content="https://missmelanie.online">
+  <meta property="og:type" content="website">
+
+  <!-- Noindex temporaire — retirer avant le launch officiel -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css?v=9">
+  <link rel="stylesheet" href="css/components.css?v=9">
+  <link rel="stylesheet" href="css/responsive.css?v=9">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="home.html" class="nav-logo">
+        <span class="logo-mark">🌸</span>
+        <span class="logo-name">Miss <span>Melanie</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="services.html" data-fr="Cours" data-en="Classes">Cours</a>
+        <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+        <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="services.html" class="btn-primary nav-cta" data-fr="Réserver →" data-en="Book →">Réserver →</a>
+        <button id="lang-toggle" class="lang-toggle" onclick="toggleLang()" aria-label="Changer de langue">EN</button>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div class="mobile-menu">
+    <a href="services.html" data-fr="Cours" data-en="Classes">Cours</a>
+    <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+    <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+    <a href="services.html" class="btn-primary" data-fr="Réserver un cours →" data-en="Book a class →">Réserver un cours →</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="hero-tag" data-fr="🌟 Cours d'anglais en ligne · Ages 5–16" data-en="🌟 Online English classes · Ages 5–16">🌟 Cours d'anglais en ligne · Ages 5–16</span>
+        <h1>
+          <span data-fr="Apprendre l'anglais," data-en="Learn English,">Apprendre l'anglais,</span><br>
+          <span class="accent" data-fr="une aventure à la fois" data-en="one adventure at a time">une aventure à la fois</span>
+        </h1>
+        <p class="hero-subtitle" data-fr="Des cours en ligne dynamiques et personnalisés avec Melanie — une tutrice passionnée avec un taux de réinscription exceptionnel." data-en="Dynamic, personalized online classes with Melanie — a passionate tutor with an exceptional re-enrollment rate.">
+          Des cours en ligne dynamiques et personnalisés avec Melanie — une tutrice passionnée avec un taux de réinscription exceptionnel.
+        </p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn-primary" data-fr="🎯 Réserver un cours d'essai" data-en="🎯 Book a Trial Class">🎯 Réserver un cours d'essai</a>
+          <a href="#services-preview" class="btn-link" data-fr="En savoir plus" data-en="Learn more">En savoir plus</a>
+        </div>
+
+        <div class="trust-badges">
+          <div class="trust-badge"><span class="check">✓</span> <span data-fr="Cours d'essai disponibles" data-en="Trial classes available">Cours d'essai disponibles</span></div>
+          <div class="trust-badge"><span class="check">✓</span> <span data-fr="Bilingue FR/EN" data-en="Bilingual FR/EN">Bilingue FR/EN</span></div>
+          <div class="trust-badge"><span class="check">✓</span> <span data-fr="5 à 16 ans" data-en="Ages 5 to 16">5 à 16 ans</span></div>
+          <div class="trust-badge"><span class="check">✓</span> <span data-fr="En ligne via Google Meet" data-en="Online via Google Meet">En ligne via Google Meet</span></div>
+          <div class="trust-badge"><span class="check">✓</span> <span data-fr="Forfaits flexibles" data-en="Flexible packages">Forfaits flexibles</span></div>
+          <div class="trust-badge"><span class="check">✓</span> <span data-fr="Horaires fixes — zéro surprise" data-en="Fixed schedule — zero surprises">Horaires fixes — zéro surprise</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES PREVIEW ===== -->
+  <section class="section" id="services-preview">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-fr="NOS COURS" data-en="OUR CLASSES">NOS COURS</div>
+        <h2 class="section-title" data-fr="Un cours pour chaque <span>aventurier</span>" data-en="A class for every <span>adventurer</span>">Un cours pour chaque <span>aventurier</span></h2>
+        <p class="section-subtitle" data-fr="Des programmes adaptés à l'âge et au niveau de votre enfant." data-en="Programs tailored to your child's age and level.">Des programmes adaptés à l'âge et au niveau de votre enfant.</p>
+      </div>
+
+      <div class="card-grid services-grid">
+        <a class="service-card" href="services.html?age=5-9">
+          <span class="badge-popular" data-fr="POPULAIRE" data-en="POPULAR">POPULAIRE</span>
+          <span class="badge-trial">🎯 <span data-fr="Cours d'essai" data-en="Trial class">Cours d'essai</span></span>
+          <h3 data-fr="Anglais — 5 à 9 ans" data-en="English — Ages 5–9">Anglais — 5 à 9 ans</h3>
+          <p class="service-meta" data-fr="45 min · En ligne" data-en="45 min · Online">45 min · En ligne</p>
+          <p style="color:var(--text-mid); font-size:14px;" data-fr="Débutant, intermédiaire ou avancé — au rythme de votre enfant." data-en="Beginner, intermediate, or advanced — at your child's pace.">Débutant, intermédiaire ou avancé — au rythme de votre enfant.</p>
+        </a>
+        <a class="service-card" href="services.html?age=10-16">
+          <span class="badge-popular" data-fr="POPULAIRE" data-en="POPULAR">POPULAIRE</span>
+          <span class="badge-trial">🎯 <span data-fr="Cours d'essai" data-en="Trial class">Cours d'essai</span></span>
+          <h3 data-fr="Anglais — 10 à 16 ans" data-en="English — Ages 10–16">Anglais — 10 à 16 ans</h3>
+          <p class="service-meta" data-fr="60 min · En ligne" data-en="60 min · Online">60 min · En ligne</p>
+          <p style="color:var(--text-mid); font-size:14px;" data-fr="Conversation, grammaire et confiance à l'oral." data-en="Conversation, grammar, and speaking confidence.">Conversation, grammaire et confiance à l'oral.</p>
+        </a>
+        <a class="service-card" href="services.html?age=clubs">
+          <span class="badge-trial">🎯 <span data-fr="Cours d'essai" data-en="Trial class">Cours d'essai</span></span>
+          <h3 data-fr="Clubs & activités" data-en="Clubs & Activities">Clubs & activités</h3>
+          <p class="service-meta" data-fr="45–60 min · En ligne" data-en="45–60 min · Online">45–60 min · En ligne</p>
+          <p style="color:var(--text-mid); font-size:14px;" data-fr="STIM, lecture, écriture créative et plus — apprendre en s'amusant." data-en="STEM, book club, creative writing and more — learning through fun.">STIM, lecture, écriture créative et plus — apprendre en s'amusant.</p>
+        </a>
+      </div>
+
+      <div class="text-center" style="margin-top:32px;">
+        <a href="services.html" class="btn-secondary" data-fr="Voir tous les services →" data-en="See all services →">Voir tous les services →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POURQUOI MÉLANIE ===== -->
+  <section class="section" style="background:var(--bg-violet-soft);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-fr="POURQUOI MÉLANIE" data-en="WHY MÉLANIE">POURQUOI MÉLANIE</div>
+        <h2 class="section-title" data-fr="Une approche qui <span>fonctionne</span>" data-en="An approach that <span>works</span>">Une approche qui <span>fonctionne</span></h2>
+      </div>
+
+      <div class="card-grid features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3 data-fr="Taux de réinscription exceptionnel" data-en="Exceptional re-enrollment rate">Taux de réinscription exceptionnel</h3>
+          <p data-fr="Les familles reviennent, cours après cours." data-en="Families come back, class after class.">Les familles reviennent, cours après cours.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 data-fr="Cours personnalisés" data-en="Personalized classes">Cours personnalisés</h3>
+          <p data-fr="Adaptés au niveau et au rythme de chaque enfant." data-en="Tailored to each child's level and pace.">Adaptés au niveau et au rythme de chaque enfant.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3 data-fr="Environnement sécuritaire" data-en="Safe environment">Environnement sécuritaire</h3>
+          <p data-fr="Bienveillant, structuré, pensé pour les enfants." data-en="Caring, structured, built for kids.">Bienveillant, structuré, pensé pour les enfants.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 data-fr="Approche ludique et structurée" data-en="Playful, structured approach">Approche ludique et structurée</h3>
+          <p data-fr="Les enfants apprennent en s'amusant, sans perdre le fil." data-en="Kids learn while having fun, without losing structure.">Les enfants apprennent en s'amusant, sans perdre le fil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TÉMOIGNAGES ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-fr="TÉMOIGNAGES" data-en="TESTIMONIALS">TÉMOIGNAGES</div>
+        <h2 class="section-title" data-fr="Ce que <span>disent</span> les parents" data-en="What <span>parents</span> say">Ce que <span>disent</span> les parents</h2>
+      </div>
+
+      <div class="card-grid testimonials-grid">
+        <div class="testimonial-card" data-fr="[TÉMOIGNAGE À AJOUTER]" data-en="[TESTIMONIAL TO BE ADDED]">[TÉMOIGNAGE À AJOUTER]</div>
+        <div class="testimonial-card" data-fr="[TÉMOIGNAGE À AJOUTER]" data-en="[TESTIMONIAL TO BE ADDED]">[TÉMOIGNAGE À AJOUTER]</div>
+        <div class="testimonial-card" data-fr="[TÉMOIGNAGE À AJOUTER]" data-en="[TESTIMONIAL TO BE ADDED]">[TÉMOIGNAGE À AJOUTER]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <h2 data-fr="Prêt à commencer l'aventure?" data-en="Ready to start the adventure?">Prêt à commencer l'aventure?</h2>
+        <div class="cta-actions">
+          <a href="services.html" class="btn-primary" data-fr="Réserver un cours d'essai" data-en="Book a trial class">Réserver un cours d'essai</a>
+          <a href="services.html" class="btn-secondary" data-fr="Voir les tarifs" data-en="See pricing">Voir les tarifs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><span>🌸</span> Miss Melanie</div>
+          <p class="footer-tagline" data-fr="Cours d'anglais en ligne et en présentiel pour enfants de 5 à 16 ans au Québec." data-en="Online and in-person English classes for children ages 5–16 in Quebec.">Cours d'anglais en ligne et en présentiel pour enfants de 5 à 16 ans au Québec.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-fr="Liens rapides" data-en="Quick Links">Liens rapides</h4>
+          <ul>
+            <li><a href="home.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" data-fr="Cours & tarifs" data-en="Classes & Pricing">Cours & tarifs</a></li>
+            <li><a href="about.html" data-fr="À propos" data-en="About">À propos</a></li>
+            <li><a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+          <ul>
+            <li><a href="mailto:melanie@missmelanie.online">melanie@missmelanie.online</a></li>
+            <li><a href="mailto:admin@missmelanie.online">admin@missmelanie.online</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Miss Melanie · <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
+        <div class="footer-links">
+          <a href="#" data-fr="Politique de confidentialité" data-en="Privacy Policy">Politique de confidentialité</a>
+          <a href="#" data-fr="Modalités" data-en="Terms">Modalités</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lang.js?v=9"></script>
+  <script src="js/main.js?v=9"></script>
+</body>
+</html>
