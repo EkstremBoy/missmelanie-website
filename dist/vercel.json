@@ -5,7 +5,7 @@
   ],
   "functions": {
     "api/admin-gate.js": {
-      "includeFiles": "admin/**"
+      "includeFiles": "api/_admin-pages/**"
     }
   }
 }

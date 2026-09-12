@@ -3,7 +3,8 @@
    Vercel Serverless Function (Node.js) — protège /admin par authentification
    HTTP Basic, vérifiée AVANT que le HTML ne soit servi. Câblé via les
    "rewrites" de vercel.json : toute requête /admin ou /admin/* passe par
-   cette fonction, qui lit le fichier correspondant dans admin/ seulement
+   cette fonction, qui lit le fichier correspondant dans _admin-pages/
+   (hors du dossier public, jamais servi comme fichier statique) seulement
    si les identifiants sont valides.
 
    Configuration requise sur Vercel (Project Settings → Environment Variables) :
@@ -78,8 +79,8 @@ module.exports = (req, res) => {
   if (Array.isArray(requested)) requested = requested.join('/');
   if (!requested) requested = 'index.html';
 
-  const adminDir = path.join(__dirname, '..', 'admin');
-  // Empêche toute tentative de sortir du dossier admin/ (ex: ../../etc).
+  const adminDir = path.join(__dirname, '_admin-pages');
+  // Empêche toute tentative de sortir du dossier _admin-pages/ (ex: ../../etc).
   const filePath = path.normalize(path.join(adminDir, requested));
 
   if (!filePath.startsWith(adminDir)) {
