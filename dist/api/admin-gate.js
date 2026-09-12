@@ -76,6 +76,7 @@ module.exports = (req, res) => {
     res.setHeader('Cache-Control', 'no-store');
     res.status(200).send(html);
   } catch (err) {
-    res.status(500).send('DEBUG ERROR: ' + (err && err.stack ? err.stack : String(err)));
+    console.error('admin-gate error:', err);
+    res.status(500).send('Une erreur est survenue.');
   }
 };
