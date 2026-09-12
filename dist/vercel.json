@@ -2,10 +2,5 @@
   "rewrites": [
     { "source": "/admin", "destination": "/api/admin-gate" },
     { "source": "/admin/:path*", "destination": "/api/admin-gate?path=:path*" }
-  ],
-  "functions": {
-    "api/admin-gate.js": {
-      "includeFiles": "api/_admin-pages/**"
-    }
-  }
+  ]
 }
