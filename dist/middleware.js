@@ -13,11 +13,16 @@
    dans le code.
    ============================================ */
 
-import { next } from '@vercel/edge';
-
 export const config = {
   matcher: ['/admin', '/admin/:path*'],
 };
+
+// Équivalent à next() de @vercel/edge, sans dépendance externe — un Response
+// vide portant cet en-tête spécial dit à Vercel de laisser passer la requête
+// vers le fichier statique demandé plutôt que de la bloquer.
+function next() {
+  return new Response(null, { headers: { 'x-middleware-next': '1' } });
+}
 
 // Comparaison à temps constant pour éviter les attaques par mesure de timing.
 function safeEqual(a, b) {
