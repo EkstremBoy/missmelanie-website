@@ -41,6 +41,7 @@
   .card-grid.features-grid { grid-template-columns: repeat(4, 1fr); }
   .card-grid.testimonials-grid { grid-template-columns: repeat(3, 1fr); }
   .card-grid.workshop-grid { grid-template-columns: repeat(3, 1fr); }
+  .card-grid.about-stats-grid { grid-template-columns: repeat(3, 1fr); }
 
   .process-steps { flex-direction: row; }
   .process-step { flex-direction: column; text-align: left; }
